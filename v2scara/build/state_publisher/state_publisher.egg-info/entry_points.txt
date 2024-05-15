@@ -1,0 +1,3 @@
+[console_scripts]
+py_publisher = state_publisher.publisher:main
+

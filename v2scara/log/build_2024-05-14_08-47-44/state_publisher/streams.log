@@ -1,0 +1,18 @@
+[0.720s] Invoking command in '/home/psy/fyp/v2scara/build/state_publisher': PYTHONPATH=/home/psy/fyp/v2scara/build/state_publisher/prefix_override:/home/psy/fyp/v2scara/install/state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/psy/fyp/v2scara/build/state_publisher/build --no-deps install_data
+[0.960s] running develop
+[1.109s] running egg_info
+[1.109s] writing state_publisher.egg-info/PKG-INFO
+[1.109s] writing dependency_links to state_publisher.egg-info/dependency_links.txt
+[1.110s] writing entry points to state_publisher.egg-info/entry_points.txt
+[1.110s] writing requirements to state_publisher.egg-info/requires.txt
+[1.110s] writing top-level names to state_publisher.egg-info/top_level.txt
+[1.112s] reading manifest file 'state_publisher.egg-info/SOURCES.txt'
+[1.112s] writing manifest file 'state_publisher.egg-info/SOURCES.txt'
+[1.114s] running build_ext
+[1.114s] Creating /home/psy/fyp/v2scara/install/state_publisher/lib/python3.10/site-packages/state-publisher.egg-link (link to .)
+[1.115s] Installing py_publisher script to /home/psy/fyp/v2scara/install/state_publisher/lib/state_publisher
+[1.115s] 
+[1.115s] Installed /home/psy/fyp/v2scara/build/state_publisher
+[1.115s] running install_data
+[1.115s] copying package.xml -> /home/psy/fyp/v2scara/install/state_publisher/share/state_publisher
+[1.151s] Invoked command in '/home/psy/fyp/v2scara/build/state_publisher' returned '0': PYTHONPATH=/home/psy/fyp/v2scara/build/state_publisher/prefix_override:/home/psy/fyp/v2scara/install/state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/psy/fyp/v2scara/build/state_publisher/build --no-deps install_data

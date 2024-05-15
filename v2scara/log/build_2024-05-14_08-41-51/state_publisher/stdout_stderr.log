@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing state_publisher.egg-info/PKG-INFO
+writing dependency_links to state_publisher.egg-info/dependency_links.txt
+writing entry points to state_publisher.egg-info/entry_points.txt
+writing requirements to state_publisher.egg-info/requires.txt
+writing top-level names to state_publisher.egg-info/top_level.txt
+reading manifest file 'state_publisher.egg-info/SOURCES.txt'
+writing manifest file 'state_publisher.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/psy/fyp/v2scara/install/state_publisher/lib/python3.10/site-packages/state-publisher.egg-link (link to .)
+Installing py_publisher script to /home/psy/fyp/v2scara/install/state_publisher/lib/state_publisher
+
+Installed /home/psy/fyp/v2scara/build/state_publisher
+running install_data
+copying package.xml -> /home/psy/fyp/v2scara/install/state_publisher/share/state_publisher
