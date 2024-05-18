@@ -23,7 +23,7 @@
             <inertia ixx="2.26" ixy="0.0" ixz="0.0" iyy="6.26" iyz="0.0" izz="8.5" />
         </inertial>
     </link>
-    <joint name="slider_joint" type="prismatic">
+    <joint name="sl" type="prismatic">
         <origin xyz="0 0 0.445" rpy="0 0 0"/>
         <parent link="base_link"/>
         <child link="slider_link"/>     
@@ -46,12 +46,12 @@
             <inertia ixx="2.26" ixy="0.0" ixz="0.0" iyy="6.26" iyz="0.0" izz="8.5" />
         </inertial>
     </link>
-    <joint name="rv_joint1" type="revolute">
+    <joint name="sh" type="revolute">
         <origin xyz="0 0.06 0" rpy="0 0 0"/>
         <parent link="slider_link"/>
         <child link="sh_link"/>
         <axis xyz="0 0 1"/>
-        <limit lower="-1.5708" upper="1.5708" velocity="0.5" effort="1000"/> 
+        <limit lower="1.5708" upper="-1.5708" velocity="0.5" effort="1000"/> 
     </joint>
     <link name="sh_link">
         <visual>
@@ -69,18 +69,41 @@
             <inertia ixx="2.26" ixy="0.0" ixz="0.0" iyy="6.26" iyz="0.0" izz="8.5" />
         </inertial>
     </link>
-    <joint name="rv_joint2" type="revolute">
+    <joint name="el" type="revolute">
         <origin xyz="0 0.245 0" rpy="0 0 0"/>
         <parent link="sh_link"/>
         <child link="el_link"/>
         <axis xyz="0 0 1"/>
-        <limit lower="-1.5708" upper="1.5708" velocity="0.5" effort="1000"/> 
+        <limit lower="1.5708" upper="-1.5708" velocity="0.5" effort="1000"/> 
     </joint>
     <link name="el_link">
         <visual>
             <origin xyz="0 0.0925 0" rpy="0 0 0"/>
             <geometry>
                 <box size="0.032 0.185 0.01" />
+            </geometry>
+            <material name="green">
+                <color rgba="0.2 1 0.2 1"/>
+            </material>
+        </visual>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="12" />
+            <inertia ixx="2.26" ixy="0.0" ixz="0.0" iyy="6.26" iyz="0.0" izz="8.5" />
+        </inertial>
+    </link> 
+    <joint name="cl" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="el_link"/>
+        <child link="cl_link"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="1.5708" upper="-1.5708" velocity="0.5" effort="1000"/> 
+    </joint>
+    <link name="cl_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.01 0.01 0.01" />
             </geometry>
             <material name="green">
                 <color rgba="0.2 1 0.2 1"/>
