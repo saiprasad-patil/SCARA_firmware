@@ -4,7 +4,7 @@ import socket
 customtkinter.set_appearance_mode("system")
 customtkinter.set_default_color_theme("dark-blue")
 import socket
-HOST = '192.168.241.55'
+HOST = '192.168.222.55'
 PORT = 12345
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
